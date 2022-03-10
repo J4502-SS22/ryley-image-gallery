@@ -2,8 +2,13 @@ body {
 font-family: "Helvetica", "Arial", sans-serif;
 }
 
-main {
+header, main {
   width: 90%;
   max-width: 800px;
   margin: auto;
+}
+
+.darkMode {
+background: black;
+color: white; /This is just white text/  
 }

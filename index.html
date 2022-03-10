@@ -5,7 +5,7 @@
     <title>Maddy's Photo Gallery</title>
     <link rel="stylesheet" href="stylesheet.css"
   </head>
-  <body id="overallBody" class="darkMode">
+  <body id="overallBody">
   <header>
     <h1>Laundry 101</h1>
     <h2>This is a step-by-step guide on doing laundry</h2>
@@ -53,7 +53,21 @@ alt="A Tide pod and fabric softening beads sit next to a washing machine">
   </main>
   <script type="text/javascript">
     "use strict";
-    alert("Hello, World!");
+
+var toggle = document.getElementById("toggleButton");
+var overallBody = document.getElementById("overallBody");
+
+var clickCount = 0;
+
+function clickedButton(){
+  clickCount = clickCount + 1;
+  alert ("I've been clicked!" + clickCount);
+}
+function changeColorMode(){
+overallBody.classList.add("darkMode");
+}
+toggle.oneclick = clickedButton;
+
   </script>
 
   </body>
